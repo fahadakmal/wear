@@ -1,6 +1,6 @@
 import SHopActionTypes from "./shop.types";
 const INITIAL_STATE={
-    collections:[]
+    collections:null
 }
 const shopReducer=(state=INITIAL_STATE,action)=>{
     switch (action.type) {
@@ -12,7 +12,7 @@ const shopReducer=(state=INITIAL_STATE,action)=>{
         
         default:
             return state;
-    }
+    } 
 }
 
 export default shopReducer;
